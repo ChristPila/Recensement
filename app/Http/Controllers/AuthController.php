@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\ValidationException;
 
-class AuthControler extends Controller
+class AuthController extends Controller
 {
     //
     public function login(Request $request){
@@ -32,5 +32,4 @@ class AuthControler extends Controller
      ];
      return response($response, 200);
     }
-
 }
