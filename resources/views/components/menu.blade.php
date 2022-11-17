@@ -3,7 +3,7 @@
         data-accordion="false">
 
         <li class="nav-item">
-            <a href="{{ url('home') }}" class="{{ request()->is('home')? 'nav-link active' : 'nav-link' }}" class="nav-link">
+            <a href="{{ route('home') }}" class="{{ request()->is('home')? 'nav-link active' : 'nav-link' }}" class="nav-link">
                 <i class="nav-icon fas fa-tachometer-alt"></i>
                 <p>
                     Tableau de bord

@@ -18,7 +18,7 @@ use App\Http\Controllers\RecenseController;
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 //Route::get('user', 'RecenseController@index');
 //Route::post('/users/form', [RecenseController::class, 'create'])->name('add_user');

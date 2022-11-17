@@ -8,11 +8,9 @@
                     <h2 class="h3 mb-0 page-title">{{ __('Edit User') }}</h2>
                 </div>
                 <div class="col-auto">
-
                     <a href="{{route('user.index')}}" class="btn btn-primary" style="color:white">
                         <span style="color:white"></span> {{ __('Retour') }}
                     </a>
-
                 </div>
             </div>
             <div class="content-header row">

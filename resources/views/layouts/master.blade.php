@@ -38,9 +38,9 @@
 
         <div class="content-wrapper">
 
-
             <div class="content">
                 @yield("content")
+                @stack('page_scripts')
             </div>
 
         </div>
@@ -55,7 +55,7 @@
                 Anything you want
             </div>
 
-            <strong>Copyright &copy; 2021-2022 <a href="#">CP</a>.</strong> All rights
+            <strong>Copyright &copy; 2021-2022 <a href="https://github.com/ChristPila">CP</a>.</strong> All rights
             reserved.
         </footer>
     </div>
