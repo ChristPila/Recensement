@@ -89,6 +89,12 @@
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-12">
                         <div class="form-group">
+                            <strong>{{ __('Age') }}:</strong>
+                            {!! Form::text('age', null, array('placeholder' => 'Nom','class' => 'form-control')) !!}
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="form-group">
                             <strong>{{ __('État civil') }}:</strong>
                             {!! Form::text('etat_civil', null, array('placeholder' => 'Nom','class' => 'form-control')) !!}
                         </div>

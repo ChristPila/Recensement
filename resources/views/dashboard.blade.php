@@ -23,6 +23,7 @@
     <script src="{{ asset('js/chart.min.js') }}"></script>
     <script>
         var mois = ['Jan', 'Feb', 'Mar', 'Avr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        /*var mois = ['Jan', 'Feb', 'Mar', 'Avr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
         var recense = document.querySelector('#recense').value
         recense = JSON.parse(recense);
         var tb_mois = []
@@ -33,7 +34,7 @@
             console.log(tb_mois)
             tb_nb.push(parseInt(rep.nombre))
             console.log(tb_nb)
-        })
+        })*/
         var AreaChart = document.getElementById("AreaChart").getContext("2d");
         var gradientStroke = AreaChart.createLinearGradient(500, 0, 100, 0);
         gradientStroke.addColorStop(0, "#F76300");
@@ -44,7 +45,7 @@
         var myAreaChart = new Chart(AreaChart, {
             type: "line",
             data: {
-                labels: tb_mois,
+                labels: mois,
                 datasets: [{
                         label: "recenses",
                         borderColor: gradientStroke,
@@ -54,7 +55,7 @@
                         legendColor: "#F76300",
                         fill: true,
                         borderWidth: 1,
-                        data: tb_nb,
+                        data: [1, 5, 6, 9, 3, 57, 20, 100, 4, 50, 200, 45]
                     },
                 ],
             },

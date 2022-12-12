@@ -131,6 +131,7 @@ class RecenseController extends Controller
             'nom_pere' => 'required',
             'pays' => 'required',
             'sexe' => 'required',
+            'age'=>'required',
             'etat_civil' => 'required',
             'province' => 'required',
             'nationalite' => 'required',

@@ -20,6 +20,7 @@ class CreateRecensesTable extends Migration
             $table->string('postnom');
             $table->string('lieu_de_naissance');
             $table->string('sexe');
+            $table->string('age');
             $table->string('nom_mere');
             $table->string('nom_pere');
             $table->string('etat_civil');

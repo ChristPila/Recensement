@@ -16,6 +16,7 @@ class Recense extends Model
     'postnom',
     'lieu_de_naissance',
     'sexe',
+    'age',
     'nom_mere',
     'nom_pere',
     'etat_civil',
